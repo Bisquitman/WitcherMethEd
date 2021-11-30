@@ -1,0 +1,28 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.header__announcement {
+  justify-self: center;
+}
+
+.header__navigation {
+  justify-self: end;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 15px;
+  }
+
+  .header__container {
+    grid-template-columns: 45px 1fr 45px;
+  }
+}
